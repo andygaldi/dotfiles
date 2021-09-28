@@ -3,21 +3,29 @@
 First, clone this repository and cd into 
 
 ```zsh
-git clone ...
-cd .dotfiles
+mkdir ~/projects
+cd ~/projects
+git clone https://github.com/andygaldi/dotfiles.git
+cd dotfiles
 ```
 
 ## Installing necessary applications
 
 1. Install Homebrew (follow the directions at https://docs.brew.sh/Installation)
 
-2. Create a symbolic link for the repo version of `.zshrc` or `.bashrc` to the home directory
+2. Install all applications in Brewfile
+```zsh
+brew bundle Brewfile
+```
+## Set up terminal
+Create a symbolic link for the repo version of `.zshrc` and `.zshenv` to the home directory
 
 ```zsh
 # The path to the original needs to be relative to the location of the symbolic link, so be explicit
 ln -s ~/projects/dotfiles/zsh/.zshenv ~/.zshenv
 ln -s ~/projects/dotfiles/zsh/.zshrc ~/.zshrc
 ```
+Restart terminal
 
 ## Git configuration
 Before you can start using Git, you need to configure it. Run each of the following lines on the command line to make sure everything is set up.
