@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-fpath=($DOTFILES/zsh/plugins $fpath)
-
 # +---------+
 # | HISTORY |
 # +---------+
@@ -22,7 +20,7 @@ setopt HIST_VERIFY               # Do not execute immediately upon history expan
 
 # Add .zsh to fpath for git autocompletion
 zstyle ':completion:*:*:git:*' script $DOTFILES/zsh/git/git-completion.bash
-fpath=($DOTFILES/zsh/git/git-autocomplete $fpath)
+fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 
 # +--------+
