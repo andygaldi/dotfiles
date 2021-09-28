@@ -4,6 +4,8 @@
 
 ## Instructions followed
 
+NOTE: These instructions are already incorporated in `dotfiles/set-up-a-new-mac.md`.
+
 1. According to the comment at the top of `git-completion.zsh`, the recommended way to install this script is to make a copy of it as a file named '_git' inside any directory in your fpath.
 
 ```zsh

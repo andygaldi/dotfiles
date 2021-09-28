@@ -18,14 +18,21 @@ cd dotfiles
 brew bundle Brewfile
 ```
 ## Set up terminal
-Create a symbolic link for the repo version of `.zshrc` and `.zshenv` to the home directory
+1. Create a symbolic link for the repo version of `.zshrc` and `.zshenv` to the home directory
 
 ```zsh
 # The path to the original needs to be relative to the location of the symbolic link, so be explicit
 ln -s ~/projects/dotfiles/zsh/.zshenv ~/.zshenv
 ln -s ~/projects/dotfiles/zsh/.zshrc ~/.zshrc
 ```
-Restart terminal
+
+2. Copy `git-completion.zsh` as recommended. See `dotfiles/zsh/git/README.md` for more details.
+```zsh
+mkdir ~/.zsh
+cp ~/projects/dotfiles/zsh/git/git-completion.zsh ~/.zsh/_git
+```
+
+3. Restart terminal
 
 ## Git configuration
 Before you can start using Git, you need to configure it. Run each of the following lines on the command line to make sure everything is set up.
