@@ -1,6 +1,6 @@
 # Set up a new Mac
 
-First, clone this repository and cd into 
+First, clone this repository and `cd` into it
 
 ```zsh
 mkdir ~/projects
@@ -9,7 +9,7 @@ git clone https://github.com/andygaldi/dotfiles.git
 cd dotfiles
 ```
 
-## Installing necessary applications
+## Install necessary applications
 
 1. Install Homebrew (follow the directions at https://docs.brew.sh/Installation)
 
@@ -34,7 +34,7 @@ cp ~/projects/dotfiles/zsh/git/git-completion.zsh ~/.zsh/_git
 
 3. Restart terminal
 
-## Git configuration
+## Configure Git
 Before you can start using Git, you need to configure it. Run each of the following lines on the command line to make sure everything is set up.
 
 ```zsh
