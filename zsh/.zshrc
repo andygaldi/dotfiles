@@ -1,6 +1,13 @@
 #!/bin/zsh
 
 # +---------+
+# | PRIVATE |
+# +---------+
+# Load private environment variables
+[ -f $DOTFILES/private.zsh ] && . $DOTFILES/private.zsh
+
+
+# +---------+
 # | HISTORY |
 # +---------+
 

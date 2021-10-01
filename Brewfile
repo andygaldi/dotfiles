@@ -7,6 +7,13 @@ cask 'visual-studio-code'
 cask 'google-cloud-sdk'
 brew 'git'
 
+# For Zelus
+brew 'python3'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+brew 'poetry'
+brew 'postgresql'
+
 # May find these helpful
 cask 'alfred'
 cask 'spectacle'
@@ -24,7 +31,6 @@ brew 'awscli'
 # brew 'mycli'
 # brew 'mysql', restart_service: true
 # brew 'node'
-# brew 'python'
 # brew 'r'
 # brew 'ruby'
 # mas 'Xcode', id: 497799835

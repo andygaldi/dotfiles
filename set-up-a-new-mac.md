@@ -15,7 +15,7 @@ cd dotfiles
 
 2. Install all applications in Brewfile
 ```zsh
-brew bundle Brewfile
+brew bundle
 ```
 ## Set up terminal
 1. Create a symbolic link for the repo version of `.zshrc` and `.zshenv` to the home directory
