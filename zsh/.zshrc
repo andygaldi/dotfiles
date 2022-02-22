@@ -60,3 +60,24 @@ zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
 # Add command gitit to open Github repo in default browser from a local repo
 autoload -U gitit
+
+# +-------+
+# | pyenv |
+# +-------+
+
+# # Needed for pyenv. Homebrew install of pyenv doen't auto add this automatically
+# # From https://stackoverflow.com/questions/56463930/interpreters-installed-via-pyenv-are-not-added-to-path
+# export PATH=$(pyenv root)/shims:$PATH
+# Commands to autoactivate virtual envs and enable autocomplete
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+# For pyenv edits to PATH as specified here: https://github.com/pyenv/pyenv#homebrew-on-macos
+eval "$(pyenv init --path)" # Sets up your shims path. This is the only requirement for pyenv to function properly.
+eval "$(pyenv init -)" # Installs autocompletion, Rehashes shims (From time to time you'll need to rebuild your shim files. Doing this on init makes sure everything is up to date), and Installs `pyenv` into the current shell as a shell function (allows pyenv and plugins to change variables in your current shell, making commands like pyenv shell possible)
+
+# +----------------------+
+# | Google Cloud SDK CLI |
+# +----------------------+
+
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"

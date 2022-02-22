@@ -8,7 +8,6 @@ cask 'google-cloud-sdk'
 brew 'git'
 
 # For Zelus
-brew 'python3'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'poetry'
@@ -19,6 +18,7 @@ cask 'alfred'
 cask 'spectacle'
 cask 'postman'
 brew 'awscli'
+brew 'jq'
 # brew 'rclone'
 # cask 'cyberduck'
 # brew 'autoenv'
@@ -26,7 +26,6 @@ brew 'awscli'
 # brew 'bash-completion'
 # brew 'coreutils'  # to get realpath
 # brew 'freetds@0.91'
-# brew 'jq'
 # brew 'openssl'
 # brew 'mycli'
 # brew 'mysql', restart_service: true
