@@ -12,6 +12,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'poetry'
 brew 'postgresql'
+brew 'pandoc'
 
 # May find these helpful
 cask 'alfred'
