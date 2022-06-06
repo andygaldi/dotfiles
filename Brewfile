@@ -8,10 +8,22 @@ cask 'google-cloud-sdk'
 brew 'git'
 
 # For Zelus
+## For pyenv
+brew 'openssl' 
+brew 'readline'
+brew 'sqlite3'
+brew 'xz'
+brew 'zlib'
+
+brew 'poetry'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
-brew 'poetry'
+brew 'r'
 brew 'postgresql'
+brew 'kubernetes-cli'
+brew 'direnv'
+brew 'duckdb'
+
 brew 'pandoc'
 
 # May find these helpful
