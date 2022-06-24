@@ -22,7 +22,6 @@ brew 'r'
 brew 'postgresql'
 brew 'kubernetes-cli'
 brew 'direnv'
-brew 'duckdb'
 
 brew 'pandoc'
 
