@@ -24,6 +24,7 @@ brew bundle
 # The path to the original needs to be relative to the location of the symbolic link, so be explicit
 ln -s ~/projects/dotfiles/zsh/.zshenv ~/.zshenv
 ln -s ~/projects/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/projects/dotfiles/zsh/starship.toml ~/.config/startship.toml
 ```
 
 2. Copy `git-completion.zsh` as recommended. See `dotfiles/zsh/git/README.md` for more details.
