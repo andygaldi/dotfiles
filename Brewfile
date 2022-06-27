@@ -6,6 +6,7 @@ cask 'docker'
 cask 'visual-studio-code'
 cask 'google-cloud-sdk'
 brew 'git'
+brew 'starship'
 
 # For Zelus
 ## For pyenv
