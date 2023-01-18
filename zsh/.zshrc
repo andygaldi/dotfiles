@@ -69,11 +69,11 @@ release-tag-main() {
   if [[ $# -eq 1 ]] ; then
      git checkout main;
      git pull;
-     echo "Tagging and pushing with release-$1-$GIT_TIMESTAMP"
-     echo "https://github.com/zelus-analytics/$GIT_REPO_NAME/releases/tag/release-$1-$GIT_TIMESTAMP"
+     echo "Tagging and pushing with release-basketball-$1-$GIT_TIMESTAMP"
+     echo "https://github.com/zelus-analytics/$GIT_REPO_NAME/releases/tag/release-basketball-$1-$GIT_TIMESTAMP"
      sleep 3
-     git tag release-$1-$GIT_TIMESTAMP
-     git push origin release-$1-$GIT_TIMESTAMP
+     git tag release-basketball-$1-$GIT_TIMESTAMP
+     git push origin release-basketball-$1-$GIT_TIMESTAMP
   else
      echo "Error: requires exactly one argument"
   fi
@@ -83,11 +83,11 @@ release-tag-commit() {
   GIT_TIMESTAMP=$(date -u "+%Y%m%d.%H%M%S");
   GIT_REPO_NAME=$(git config --get remote.origin.url | awk -F/ '{print $2}' | awk -F. '{print $1}');
   if [[ $# -eq 1 ]] ; then
-     echo "Tagging and pushing with release-$1-$GIT_TIMESTAMP"
-     echo "https://github.com/zelus-analytics/$GIT_REPO_NAME/releases/tag/release-$1-$GIT_TIMESTAMP"
+     echo "Tagging and pushing with release-basketball-$1-$GIT_TIMESTAMP"
+     echo "https://github.com/zelus-analytics/$GIT_REPO_NAME/releases/tag/release-basketball-$1-$GIT_TIMESTAMP"
      sleep 3
-     git tag release-$1-$GIT_TIMESTAMP
-     git push origin release-$1-$GIT_TIMESTAMP
+     git tag release-basketball-$1-$GIT_TIMESTAMP
+     git push origin release-basketball-$1-$GIT_TIMESTAMP
   else
      echo "Error: requires exactly one argument"
   fi
