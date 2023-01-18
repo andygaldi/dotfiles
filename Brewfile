@@ -20,11 +20,11 @@ brew 'poetry'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'r'
+cask 'rstudio'
 brew 'postgresql'
 brew 'kubernetes-cli'
 brew 'direnv'
-
-brew 'pandoc'
+brew 'pre-commit'
 
 # May find these helpful
 cask 'alfred'
